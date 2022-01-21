@@ -1,0 +1,22 @@
+server.port: ${PORT:8090}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_DB:politech_coreapi_auth}
+    username: ${DB_USER:politech_coreapi_auth}
+    password: ${DB_PASSWORD:politech_coreapi_auth}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      max-lifetime: 580000
+  jpa:
+    show-sql: false
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    open-in-view: true
+  flyway:
+    baseline-on-migrate: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    date-format: yyyy-MM-dd HH:mm:ss

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PolitechCoreapiAuthApplication {
+public class PolitechCoreApiAuthApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PolitechCoreapiAuthApplication.class, args);
+		SpringApplication.run(PolitechCoreApiAuthApplication.class, args);
 	}
 
 }
