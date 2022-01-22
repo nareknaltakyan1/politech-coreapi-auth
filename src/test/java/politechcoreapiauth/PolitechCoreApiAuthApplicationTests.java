@@ -8,6 +8,7 @@ class PolitechCoreApiAuthApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Changing without codeowner permission");
 	}
 
 }
