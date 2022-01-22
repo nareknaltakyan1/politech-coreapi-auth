@@ -1,5 +1,7 @@
 server.port: ${PORT:8090}
 
+spring.security.user.name: politech_coreapi_auth
+
 spring:
   datasource:
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_DB:politech_coreapi_auth}
