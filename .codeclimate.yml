@@ -1,0 +1,65 @@
+version: "2"
+checks:
+  argument-count:
+    config:
+      threshold: 5
+  complex-logic:
+    enabled: true
+  file-lines:
+    enabled: false
+  method-complexity:
+    enabled: true
+  method-count:
+    enabled: true
+    config:
+      threshold: 35
+  method-lines:
+    enabled: true
+  nested-control-flow:
+    enabled: true
+  return-statements:
+    enabled: true
+  similar-code:
+    enabled: false
+  identical-code:
+    enabled: true
+    config:
+      threshold: 75
+plugins:
+  pmd:
+    enabled: true
+    config:
+      rules:
+        - "java-android"
+        - "java-basic"
+        - "java-braces"
+        - "java-clone"
+        - "java-codesize"
+        - "java-empty"
+        - "java-finalizers"
+        - "java-imports"
+        - "java-j2ee"
+        - "java-junit"
+        - "java-migrating"
+        - "java-strings"
+        - "java-sunsecure"
+        - "java-typeresolution"
+        - "java-unnecessary"
+        - "java-unusedcode"
+    checks:
+      JUnitTestsShouldIncludeAssert:
+        enabled: false
+      JUnitAssertionsShouldIncludeMessage:
+        enabled: false
+      SignatureDeclareThrowsException:
+        enabled: false
+      TooManyStaticImports:
+        enabled: false
+      JUnitTestContainsTooManyAsserts:
+        enabled: false
+      TooManyMethods:
+        enabled: false
+      AvoidUsingHardCodedIP:
+        enabled: false
+exclude_patterns:
+  - ".mvn/**"
