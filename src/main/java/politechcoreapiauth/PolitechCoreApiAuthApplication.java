@@ -15,7 +15,7 @@ public class PolitechCoreApiAuthApplication
 
 	public static void main(String[] args)
 	{
-		SpringApplication.run(PolitechCoreApiAuthApplication.class,    args);
+		SpringApplication.run(PolitechCoreApiAuthApplication.class, args);
 	}
 
 	@PostConstruct
