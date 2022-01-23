@@ -117,7 +117,6 @@
 			<artifactId>springfox-bean-validators</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/pl.project13.maven/git-commit-id-plugin -->
 		<dependency>
 			<groupId>pl.project13.maven</groupId>
 			<artifactId>git-commit-id-plugin</artifactId>
