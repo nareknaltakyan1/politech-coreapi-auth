@@ -7,25 +7,6 @@
     <activeProfile>github</activeProfile>
   </activeProfiles>
 
-  <profiles>
-    <profile>
-      <id>github</id>
-      <repositories>
-        <repository>
-          <id>central</id>
-          <url>https://repo1.maven.org/maven2</url>
-          <releases><enabled>true</enabled></releases>
-          <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-<!--        <repository>-->
-<!--          <id>github</id>-->
-<!--          <name>GitHub Transferz Apache Maven Packages</name>-->
-<!--          <url>https://maven.pkg.github.com/transferz/coreapi-common-lib</url>-->
-<!--        </repository>-->
-      </repositories>
-    </profile>
-  </profiles>
-
   <servers>
     <server>
       <id>github</id>
