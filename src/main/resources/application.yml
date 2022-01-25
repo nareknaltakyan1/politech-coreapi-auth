@@ -22,3 +22,13 @@ spring:
     serialization:
       write-dates-as-timestamps: false
     date-format: yyyy-MM-dd HH:mm:ss
+
+internal:
+  one-time-login-token-expiry-seconds: 30
+  password-reset-token-expiry-seconds: 360
+  failed-login-attempts-limit: ${FAILED_LOGIN_ATTEMPTS_LIMIT:5}
+  from-name: transferz
+  from-email: no-reply@transferz.com
+  service-account:
+    email: ${SERVICE_ACCOUNT_EMAIL:coreapi-auth@systems.transferz.com}
+    password: ${SERVICE_ACCOUNT_PASSWORD:defaultP@ssword99}

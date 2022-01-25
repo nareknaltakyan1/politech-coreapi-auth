@@ -1,4 +1,4 @@
-package politechcoreapiauth;
+package com.politech.core.auth;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;

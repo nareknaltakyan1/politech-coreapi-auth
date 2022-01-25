@@ -15,6 +15,7 @@ CREATE TABLE users (
 CREATE TABLE organization (
 	id BIGSERIAL NOT NULL,
 	name VARCHAR(255) NOT NULL,
+	type VARCHAR(255) NOT NULL,
 	PRIMARY KEY(id),
 	UNIQUE(name)
 );
